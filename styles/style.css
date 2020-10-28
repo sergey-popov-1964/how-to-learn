@@ -13,6 +13,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -105,7 +106,7 @@
 /* Description */
 
 .description {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 .two-columns {
@@ -118,7 +119,7 @@
 .two-columns__brief {
   margin: 0;
   font-size: 18px;
-  line-height: 1.2em;
+  line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
 
@@ -146,4 +147,59 @@
 
 .two-columns__span-accent {
   font-weight: bold;
+}
+
+
+/* Digits */
+
+.digits {
+  margin: 0;
+  padding: 100px 0;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20%;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  text-align: center;
+  margin: 20px 0 0;
+  padding: 0 20%;
+}
+
+.table {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.table__cell {
+  max-width: 250px;
+  width: 100%;
+  list-style: none;
+  margin: 60px 0 0;
+}
+
+.table__heading {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 20px 0;
 }
