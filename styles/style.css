@@ -67,7 +67,7 @@
   font-weight: bold;
   max-width: 730px;
   margin-left: 64px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -78,7 +78,7 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header__link {
