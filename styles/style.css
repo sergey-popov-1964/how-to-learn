@@ -9,13 +9,13 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+/* .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   overflow: hidden;
-  /* выше установили ограничения для секции */
-}
+ } */
+/* выше установили ограничения для секции */
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /* .header__square-pic {
@@ -31,13 +31,22 @@
   margin-top: 80px;
 } */
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
+header,
+main,
+section,
+footer {
+  display: block;
+}
 
 /* Header */
 
 .header {
-  margin: 0;
-  padding: 0;
+  height: 100vh;
   min-height: 600px;
   max-height: 756px;
   font-size: 0;
@@ -45,6 +54,7 @@
   position: relative;
   align-items: center;
   display: flex;
+  overflow: hidden;
 }
 
 .logo {
@@ -62,22 +72,22 @@
 
 .header__title {
   position: relative;
+  width: 730px;
   font-size: 102px;
-  line-height: 94px;
+  line-height: 96px;
   font-weight: bold;
-  max-width: 730px;
   margin-left: 64px;
   z-index: 1;
 }
 
 .header__subtitle {
   position: absolute;
-  max-width: 388px;
-  bottom: 30px;
-  left: 64px;
+  width: 388px;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  bottom: 30px;
+  left: 64px;
   z-index: 1;
 }
 
@@ -117,16 +127,13 @@
 }
 
 .two-columns__brief {
-  margin: 0;
+  max-width: 175px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 
-}
-
-.two-columns__main-text {
-  max-width: 175px;
 }
 
 .two-columns__main-text {
@@ -181,35 +188,35 @@
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 .table__cell {
-  max-width: 250px;
-  width: 100%;
+  width: 250px;
   list-style: none;
   margin: 60px 0 0;
 }
 
 .table__heading {
-  margin: 0;
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 /* Feynman */
 
 .feynman {
-  margin: 0;
   padding: 100px 0 0;
   background: #F2F2F2 url(../images/feynman.png) no-repeat bottom left;
+  background-size: 867px 637px;
   position: relative;
   min-height: 790px;
 }
@@ -219,15 +226,15 @@
   text-align: center;
   font-size: 120px;
   line-height: 1.15;
-  font-weight: 700;
+  font-weight: bold;
   margin: 0 auto;
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px 0 0;
   font-size: 36px;
   line-height: 51px;
-  font-weight: 400;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -235,18 +242,17 @@
   text-decoration: none;
   font-size: 36px;
   line-height: 51px;
-  font-weight: 400;
+  font-weight: normal;
   position: absolute;
   top: 50%;
   right: 48px;
-  color: #2f80ed;
+  color: #000000;
 }
 
 
 /* Kaufman */
 
 .kaufman {
-  margin: 0;
   padding: 90px 0;
   background-color: #1f1f1f;
   position: relative;
@@ -265,21 +271,21 @@
   z-index: 1;
 }
 
-.table__cell_theme_dark {
-  color: #ffffff;
+.table_theme_dark {
   position: relative;
   z-index: 1;
-  max-width: 200px;
-  width: 100%;
+}
+
+.table__cell_theme_dark {
+  color: #ffffff;
+  width: 200px;
+  margin: 80px 0 0;
 }
 
 .kaufman__triangle {
   width: 877px;
   height: 877px;
-  background-image: url(../images/kaufman-triangle.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(../images/kaufman-triangle.svg) no-repeat center /contain;
   position: absolute;
   right: -210px;
   top: 0;
@@ -289,13 +295,14 @@
 /* Footer */
 
 .footer {
-  padding: 90px 0 40px;
   background-color: #1f1f1f;
+  min-height: 350px;
+  box-sizing: border-box;
+  padding: 60px 0 40px;
 }
 
 .footer__columns {
   display: flex;
-  flex-basis: 711px;
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
@@ -320,18 +327,14 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
-  margin: 18px 0;
-}
-
-.footer__column_content_info {
-  display: block;
+  padding: 18px 0;
 }
 
 .footer__column-heading {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   color: #ffffff;
 }
 
@@ -342,7 +345,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
-  margin-bottom: 16px;
   align-items: center;
 }
 
