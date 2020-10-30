@@ -6,42 +6,9 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-/* .header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  overflow: hidden;
- } */
-/* выше установили ограничения для секции */
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-/* .header__square-pic {
-  height: 568px;
-  width: 568px;
-} */
-
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header,
-main,
-section,
-footer {
-  display: block;
-}
 
 /* Header */
 
@@ -58,12 +25,12 @@ footer {
 }
 
 .logo {
+  width: 183px;
   background: no-repeat center / cover;
 }
 
-.logo__place_header {
-  background-image: url(../images/logo_place_header.svg);
-  width: 183px;
+.logo_place_header {
+  background-image: url('../images/logo_place_header.svg');
   height: 32px;
   position: absolute;
   top: 30px;
@@ -215,7 +182,7 @@ footer {
 
 .feynman {
   padding: 100px 0 0;
-  background: #F2F2F2 url(../images/feynman.png) no-repeat bottom left;
+  background: #F2F2F2 url('../images/feynman.png') no-repeat bottom left;
   background-size: 867px 637px;
   position: relative;
   min-height: 790px;
@@ -285,7 +252,7 @@ footer {
 .kaufman__triangle {
   width: 877px;
   height: 877px;
-  background: url(../images/kaufman-triangle.svg) no-repeat center /contain;
+  background: url('../images/kaufman-triangle.svg') no-repeat center /contain;
   position: absolute;
   right: -210px;
   top: 0;
@@ -311,14 +278,13 @@ footer {
 .footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
-  min-height: 350px;
+  min-height: 250px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.logo__place_footer {
-  background-image: url(../images/logo_place_footer.svg);
-  width: 183px;
+.logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
   height: 35px;
 }
 
@@ -351,5 +317,5 @@ footer {
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
