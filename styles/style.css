@@ -38,6 +38,8 @@
 }
 
 .header__title {
+  margin: 0;
+  padding: 0;
   position: relative;
   width: 730px;
   font-size: 102px;
@@ -48,6 +50,8 @@
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   position: absolute;
   width: 388px;
   font-size: 18px;
