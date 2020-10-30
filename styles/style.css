@@ -304,6 +304,21 @@
   color: #ffffff;
 }
 
+.footer__navigate {
+  margin: 0 0 16px;
+}
+
+.footer__navigate-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__navigate-item {
+  display: block;
+  margin: 0;
+}
+
 .footer__column-links {
   display: block;
   color: #ffffff;
