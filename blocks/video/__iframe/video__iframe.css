@@ -2,8 +2,11 @@
   width: 515px;
   height: 316px;
   border: none;
+  /* margin-right: 20px; */
+  list-style: none;
+  text-decoration: none;
 }
 
-.video__iframe:not(:last-of-type) {
+.video__iframe:not(:last-child) {
   margin-right: 20px;
 }
